@@ -1,20 +1,18 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Appzio\Http\Controllers\EventController;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [\App\Http\Controllers\EventController::class,'index']);
 
 Route::get('/contato', function () {
     return view('contato');
 });
 
-
 Route::get('/cadastro', function () {
     return view('cadastro');
 });
 
-Route::get('/listaDevs', function () {
+Route::get('/listadevs', function () {
     return view('listadevs');
 });

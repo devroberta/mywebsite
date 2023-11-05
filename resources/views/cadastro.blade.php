@@ -1,7 +1,12 @@
 @extends('layouts.main')
 
-@section('title', 'Contatos')
+@section('title', 'Cadastro')
 
 @section('content')
     <h1>Página de cadastro:</h1>
+    <label>Nome</label>
+    <input type="text"></input>
+    <label>email</label>
+    <input type="text"></input>
+
 @endsection

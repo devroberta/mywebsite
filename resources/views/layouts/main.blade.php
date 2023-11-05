@@ -29,7 +29,7 @@
                             <a href="http://localhost:8989/cadastro" class="nav-link">Cadastro</a>
                         </li>
                         <li>
-                            <a href="http://localhost:8989/cadastro" class="nav-link">Lista de Devs</a>
+                            <a href="http://localhost:8989/listadevs" class="nav-link">Lista de Devs</a>
                         </li>
                         <li>
                             <a href="http://localhost:8989/contato" class="nav-link">Contato</a>
@@ -41,8 +41,16 @@
 
         @yield('content')
 
-        <footer>
+        <footer class="fixarRodape">
             <p>DevRoberta&copy; 2023</p>
         </footer>
+        <style>
+            .fixarRodape {
+                bottom: 0;
+                position: fixed;
+                width: 90%;
+                text-align: center;
+            }
+        </style>
     </body>
 </html>
