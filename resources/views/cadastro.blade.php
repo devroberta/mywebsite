@@ -8,5 +8,5 @@
     <input type="text"></input>
     <label>email</label>
     <input type="text"></input>
-
+    <button>Enviar</button>
 @endsection
